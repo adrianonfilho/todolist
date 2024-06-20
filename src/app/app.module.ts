@@ -6,6 +6,7 @@ import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import { AppComponent } from './app.component';
 import {environment} from "../environments/environment";
 import { TodolistComponent } from './todolist/todolist.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TodolistComponent } from './todolist/todolist.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

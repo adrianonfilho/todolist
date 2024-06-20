@@ -22,4 +22,8 @@ export class TodolistService {
     this.firestoreCollection.doc(id).delete();
   }
 
+  updateTodoTitle(id: string, newTitle: string) {
+    this.firestoreCollection.doc(id).update({title: newTitle});
+  }
+
 }
